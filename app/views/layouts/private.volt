@@ -15,6 +15,15 @@
         <!-- Theme style -->
         {{ stylesheet_link('plugins/admin-lte/css/AdminLTE.css') }}
 
+        <!-- jQuery 2.0.2 -->
+        {{ javascript_include('plugins/jquery/dist/jquery.min.js') }}
+        <!-- jQuery UI 1.10.3 -->
+        {{ javascript_include('plugins/admin-lte/js/jquery-ui-1.10.3.min.js') }}
+        <!-- Bootstrap -->
+        {{ javascript_include('plugins/admin-lte/js/bootstrap.min.js') }}
+        <!-- AdminLTE App -->
+        {{ javascript_include('plugins/admin-lte/js/AdminLTE/app.js') }}
+        
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -125,14 +134,6 @@
                     {{ content() }}
                 </section><!-- /.content -->
 
-                <!-- jQuery 2.0.2 -->
-                {{ javascript_include('plugins/jquery/dist/jquery.min.js') }}
-                <!-- jQuery UI 1.10.3 -->
-                {{ javascript_include('plugins/admin-lte/js/jquery-ui-1.10.3.min.js') }}
-                <!-- Bootstrap -->
-                {{ javascript_include('plugins/admin-lte/js/bootstrap.min.js') }}
-                <!-- AdminLTE App -->
-                {{ javascript_include('plugins/admin-lte/js/AdminLTE/app.js') }}
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
     </body>

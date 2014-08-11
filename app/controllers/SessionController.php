@@ -20,6 +20,7 @@ class SessionController extends ControllerBase
     public function initialize()
     {
         $this->view->setTemplateBefore('public');
+        $this->loadCustomTrans('main');
     }
 
     public function indexAction()

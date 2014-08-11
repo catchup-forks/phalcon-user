@@ -27,7 +27,15 @@ class UsersController extends ControllerBase
     public function indexAction()
     {
         $this->persistent->conditions = null;
-        $this->view->form = new UsersForm();
+        $users = Users::find();
+        if (count($users) == 0) {
+            $this->flash->notice("The search did not find any users");
+            return $this->dispatcher->forward(array(
+                "action" => "index"
+            ));
+        }
+
+        $this->view->users = $users;
     }
 
     /**

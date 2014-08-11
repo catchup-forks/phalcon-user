@@ -14,4 +14,9 @@ $router->add('/reset-password/{code}/{email}', array(
     'action' => 'resetPassword'
 ));
 
+$router->add("/set-language/{language:[a-z]+}", array(
+    'controller' => 'index',
+    'action' => 'setLanguage'
+));
+
 return $router;

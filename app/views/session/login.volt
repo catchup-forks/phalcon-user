@@ -1,7 +1,7 @@
 {{ content() }}
 
 <div class="form-box" id="login-box">
-    <div class="header">Administrator</div>
+    <div class="header"><?php echo $t["login_title"] ?></div>
     {{ form('class': 'form-inline') }}
         <div class="body bg-gray">
             <div class="form-group">
