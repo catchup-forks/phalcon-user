@@ -25,7 +25,8 @@ class UsersForm extends Form
         $this->add($id);
 
         $name = new Text('name', array(
-            'placeholder' => 'Name'
+            'placeholder' => 'Name',
+            'class' => 'form-control',
         ));
 
         $name->addValidators(array(
@@ -37,7 +38,8 @@ class UsersForm extends Form
         $this->add($name);
 
         $email = new Text('email', array(
-            'placeholder' => 'Email'
+            'placeholder' => 'Email',
+            'class' => 'form-control',
         ));
 
         $email->addValidators(array(
@@ -58,22 +60,29 @@ class UsersForm extends Form
             ),
             'useEmpty' => true,
             'emptyText' => '...',
-            'emptyValue' => ''
+            'emptyValue' => '',
+            'class' => 'form-control',
         )));
 
         $this->add(new Select('banned', array(
             'Y' => 'Yes',
-            'N' => 'No'
+            'N' => 'No',
+        ), array(
+            'class' => 'form-control',
         )));
 
         $this->add(new Select('suspended', array(
             'Y' => 'Yes',
-            'N' => 'No'
+            'N' => 'No',
+        ), array(
+            'class' => 'form-control',
         )));
 
         $this->add(new Select('active', array(
             'Y' => 'Yes',
-            'N' => 'No'
+            'N' => 'No',
+        ), array(
+            'class' => 'form-control',
         )));
     }
 }
