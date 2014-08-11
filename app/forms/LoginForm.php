@@ -18,7 +18,9 @@ class LoginForm extends Form
     {
         // Email
         $email = new Text('email', array(
-            'placeholder' => 'Email'
+            'placeholder' => 'Email',
+            'class' => 'form-control',
+            'autofocus' => 'autofocus'
         ));
 
         $email->addValidators(array(
@@ -34,7 +36,8 @@ class LoginForm extends Form
 
         // Password
         $password = new Password('password', array(
-            'placeholder' => 'Password'
+            'placeholder' => 'Password',
+            'class' => 'form-control'
         ));
 
         $password->addValidator(new PresenceOf(array(
@@ -62,8 +65,8 @@ class LoginForm extends Form
 
         $this->add($csrf);
 
-        $this->add(new Submit('go', array(
-            'class' => 'btn btn-success'
+        $this->add(new Submit('Login', array(
+            'class' => 'btn bg-olive btn-block'
         )));
     }
 }

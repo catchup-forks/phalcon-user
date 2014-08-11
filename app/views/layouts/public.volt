@@ -1,47 +1,31 @@
-<div class="navbar">
-    <div class="navbar-inner">
-      <div class="container" style="width: auto;">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        {{ link_to(null, 'class': 'brand', 'Vökuró')}}
-        <div class="nav-collapse">
-          <ul class="nav">
+<!DOCTYPE html>
+<html class="bg-black">
+    <head>
+        <meta charset="UTF-8">
+        {{ get_title() }}
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <!-- bootstrap 3.0.2 -->
+        {{ stylesheet_link('plugins/admin-lte/css/bootstrap.min.css') }}
+        <!-- font Awesome -->
+        {{ stylesheet_link('plugins/admin-lte/css/font-awesome.min.css') }}
+        <!-- Theme style -->
+        {{ stylesheet_link('plugins/admin-lte/css/AdminLTE.css') }}
 
-            {%- set menus = [
-              'Home': 'index',
-              'About': 'about'
-            ] -%}
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="bg-black">
 
-            {%- for key, value in menus %}
-              {% if value == dispatcher.getControllerName() %}
-              <li class="active">{{ link_to(value, key) }}</li>
-              {% else %}
-              <li>{{ link_to(value, key) }}</li>
-              {% endif %}
-            {%- endfor -%}
+        {{ content() }}
 
-          </ul>
+        <!-- jQuery 1.1.* -->
+        {{ javascript_include('plugins/jquery/dist/jquery.min.js') }}
+        <!-- Bootstrap -->
+        {{ javascript_include('plugins/admin-lte/js/bootstrap.min.js') }}
 
-          <ul class="nav pull-right">
-            <li>{{ link_to('session/login', 'Login') }}</li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      </div>
-    </div><!-- /navbar-inner -->
-  </div>
-
-<div class="container main-container">
-  {{ content() }}
-</div>
-
-<footer>
-Made with love by the Phalcon Team
-
-    {{ link_to("privacy", "Privacy Policy") }}
-    {{ link_to("terms", "Terms") }}
-
-© 2013 Phalcon Team.
-</footer>
+    </body>
+</html>

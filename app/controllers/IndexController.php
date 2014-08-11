@@ -12,6 +12,6 @@ class IndexController extends ControllerBase
      */
     public function indexAction()
     {
-        $this->view->setTemplateBefore('public');
+        return $this->response->redirect('session/login');
     }
 }

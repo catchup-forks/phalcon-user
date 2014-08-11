@@ -119,9 +119,9 @@ $di->set('router', function () {
  */
 $di->set('flash', function () {
     return new Flash(array(
-        'error' => 'alert alert-error',
+        'error' => 'alert alert-danger',
         'success' => 'alert alert-success',
-        'notice' => 'alert alert-info'
+        'notice' => 'alert alert-warning'
     ));
 });
 
