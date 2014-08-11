@@ -1,0 +1,16 @@
+{
+  "name": "VSUser",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1.11.*",
+    "bootstrap": "~3.*",
+    "admin-lte": "~1.2.1"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "public/plugins",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,5 @@
+app/config/config.php
+app/cache/volt/*.php
+vendor
+app/cache/metaData/*.php
+data.txt
