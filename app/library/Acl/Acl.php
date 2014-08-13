@@ -33,7 +33,7 @@ class Acl extends Component
      * @var array
      */
     private $privateResources = array(
-        /*'users' => array(
+        'users' => array(
             'index',
             'search',
             'edit',
@@ -50,7 +50,7 @@ class Acl extends Component
         ),
         'permissions' => array(
             'index'
-        )*/
+        )
     );
 
     /**
