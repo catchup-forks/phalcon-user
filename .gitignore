@@ -1,4 +1,4 @@
-app/cache/volt/*.php
+app/cache/volt/*.volt.php
 vendor
 app/cache/metaData/*.php
 data.txt
