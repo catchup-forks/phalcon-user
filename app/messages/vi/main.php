@@ -1,6 +1,8 @@
 <?php
 
 $messages = array(
-    "home" => "Trang chủ",
-    "login_title" => "Trang Quản trị",
+    "home" => "Home",
+    "login_page" => "Administrator",
+    "login" => "Login",
+    "forgotPass" => "Forgot my password",
 );

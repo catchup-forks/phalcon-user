@@ -36,7 +36,6 @@ class LoginForm extends Form
 
         // Password
         $password = new Password('password', array(
-            'placeholder' => 'Password',
             'class' => 'form-control'
         ));
 

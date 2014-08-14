@@ -95,9 +95,9 @@ class ControllerBase extends Controller
         $this->view->setVar("mt", $mainTranslate);
       }
 
-      /**
-       * Loads a translation for the active controller
-       */
+    /**
+    * Loads a translation for the active controller
+    */
     public function loadCustomTrans($transFile)
     {
         $translationPath = $this->_getTransPath();
