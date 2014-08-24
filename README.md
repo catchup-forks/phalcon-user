@@ -1,4 +1,4 @@
-# VSUser
+# Phalcon User Management
 * [Vokuro](http://goo.gl/iSyAtT)
 * Multilingual: [php-site](http://goo.gl/RMBza9)
 * [Github](https://github.com/leonguyen/VSUser)
